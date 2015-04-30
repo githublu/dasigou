@@ -9,7 +9,6 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="jquery.validate.min.js"></script>
   <link href="bootstrap.icon-large.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" type="text/css" />
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -77,17 +76,27 @@ $('#postform').validate({
         <span class="icon-bar"></span>
       </button>
                 <ul><li class="selected"><a href="#" data-toggle="modal" data-target="#myModal" style="margin: 6px;">
-                  I want to post </a></li></ul>
+                  I want to post </a></li>
+                  </ul>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-left" role="search" action="search.php" method="get">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" name="search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="width: 250px;float: right;">
+    	<div style="width:60%; min-width:220px; padding: 11px;">
+			<script>
+			  (function() {
+			    var cx = '001953804360013265686:osxuicxagrw';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//cse.google.com/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:search></gcse:search>
+			</div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -433,5 +442,6 @@ EOD;
   ga('send', 'pageview');
 
 </script>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
 </body>
 </html>
