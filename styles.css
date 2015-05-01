@@ -486,3 +486,35 @@ footer .footer-bottom p, footer .footer-bottom p a {
 	nav { height: auto; }
 
 }
+.gsc-search-button
+{
+    background-color: #1a4195;
+    border-radius: 5px;
+
+}
+
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+    background-color: #1a4195 !important;
+    background-image: url("http://www.google.com/uds/css/v2/search_box_icon.png") !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 16px !important;
+    border-color: #1a4195 !important;
+    filter: none;
+}
+.gsib_a{
+ padding: 0px;
+ border: none;
+}
+.gsib_b {
+	border: none;
+}
+.gsc-control-cse{
+	padding: 0px;
+}
+.gsc-search-box .gsc-input{
+	border: none;
+}
+.gsc-search-box td{
+	padding: 0px;
+}
