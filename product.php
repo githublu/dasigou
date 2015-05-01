@@ -88,8 +88,9 @@ $(function () {
                       <br>
                       <?php 
                       echo <<<EOD
-                      <a style="margin-top:16px;" onClick="_gaq.push(['_trackEvent', 'contact', 'click', 'product_click']);" tabindex="0" class="btn btn-default" data-placement="bottom" role="button" data-toggle="popover" data-trigger="focus" data-content="Email: {$email} Phone:{$phone}">Contact info</a>
-                                           
+                      <button style ="margin-top:10px;" type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Email: {$email} Phone:{$phone}">
+                        Contact seller
+                      </button>                     
 EOD;
 ?>
                       </tr>
