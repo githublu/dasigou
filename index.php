@@ -75,9 +75,14 @@ $('#postform').validate({
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-                <ul><li class="selected"><a href="#" data-toggle="modal" data-target="#myModal" style="margin: 6px;">
-                  I want to post </a></li>
-                  </ul>
+                <ul>
+                  <li class="selected"><a href="#" data-toggle="modal" data-target="#post_modal" style="margin: 6px;">
+                    I want to post </a>
+                  </li>
+                  <li><a href="#" data-toggle="modal" data-target="#subscribe_modal" style="margin: 6px;">
+                    Subscribe Dasidog.us</a>
+                  </li>
+                </ul>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -101,9 +106,30 @@ $('#postform').validate({
   </div><!-- /.container-fluid -->
 </nav>
 
+<!-- subscribe modal -->
+              <div class="modal fade" id="subscribe_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Subscribe Dasidog.us and Save</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Weekly Subscription and receive emails for the newest and hottest deals</p>
+                      <label>Email to subscribe (only once a week)</label>
+                      <input type="email" name = "email" class="form-control" id="email" placeholder="email" >
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Subscribe Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- End of subscribe modal -->
 
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <!-- Post Modal -->
+                <div class="modal fade" id="post_modal" tabindex="-1" role="dialog" aria-labelledby="post_modal" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">

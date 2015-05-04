@@ -3,3 +3,6 @@ CREATE TABLE `share`.`subscribe` (
   `email` VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
 
+%add status attribute to Item table and set everything to be 0
+%0: active, 1: canceled
+
